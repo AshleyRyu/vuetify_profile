@@ -21,7 +21,7 @@ import FirebaseService from '@/services/FirebaseService'
 export default {
 	name: 'PortfoliosList',
 	props: {
-		limits: {type: Number, default: 3},
+		limits: {type: Number, default: 1},
     loadMore: {type: Boolean, default: false}
 	},
 	data() {
@@ -47,7 +47,7 @@ export default {
 </script>
 <style>
   .mw-700 {
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: auto;
   }
 </style>

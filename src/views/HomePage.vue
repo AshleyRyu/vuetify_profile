@@ -18,8 +18,9 @@
       <!-- Portfolio -->
       <v-layout my-5>
         <v-flex xs12>
-          <h2 class="headline my-5 text-xs-center">Portfolio</h2>
-          <PortfolioList></PortfolioList>
+          <h2 class="headline my-5 text-xs-center"> <a href="https://github.com/AshleyRyu">Portfolio</a></h2>
+          <Portfolio></Portfolio>
+          <!-- <PortfolioList></PortfolioList> -->
         </v-flex>
       </v-layout>
 
@@ -45,6 +46,7 @@
 
 <script>
 import ImgBanner from '../components/ImgBanner'
+import Portfolio from '../components/Portfolio'
 import PortfolioList from '../components/PortfolioList'
 import PostList from '../components/PostList'
 import RepositoryList from '../components/RepositoryList'
@@ -53,7 +55,8 @@ export default {
 	name: 'HomePage',
 	components: {
 		ImgBanner,
-		PortfolioList,
+    Portfolio,
+		// PortfolioList,
 		PostList,
 		RepositoryList
 	},

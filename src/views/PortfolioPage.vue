@@ -8,9 +8,10 @@
 
       <!-- Portfolio -->
       <v-layout>
-        <v-flex xs12>
+        <Portfolio :limits="3" :load-more="true"></Portfolio>
+        <!-- <v-flex xs12>
           <PortfolioList :limits="6" :load-more="true"></PortfolioList>
-        </v-flex>
+        </v-flex> -->
       </v-layout>
 
     </v-container>
@@ -19,13 +20,15 @@
 
 <script>
 import ImgBanner from '../components/ImgBanner'
-import PortfolioList from '../components/PortfolioList'
+import Portfolio from '../components/Portfolio'
+// import PortfolioList from '../components/PortfolioList'
 
 export default {
 	name: 'PortfolioPage',
 	components: {
 		ImgBanner,
-		PortfolioList,
+    Portfolio,
+		// PortfolioList,
 	},
 }
 </script>
